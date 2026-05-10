@@ -9,7 +9,7 @@ body {
   background-color: #f0f0f0;
 }
 
-/* ── Header ── */
+/* Header */
 header {
   background-color: #1a6e8a;
   color: white;
@@ -24,7 +24,7 @@ header #course-title {
   padding-bottom: 8px;
 }
 
-/* ── Nav ── */
+/* Nav */
 nav {
   background-color: #333;
   color: white;
@@ -43,7 +43,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ── Main ── */
+/* Main */
 main {
   max-width: 1200px;
   margin: 0 auto;
@@ -58,7 +58,7 @@ main > h1 {
   margin-bottom: 20px;
 }
 
-/* ── Cards layout ── */
+/* Cards layout */
 .cards-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -84,7 +84,7 @@ main > h1 {
   padding: 20px;
 }
 
-/* ── About Me card ── */
+/* About Me card */
 .bio-section {
   display: flex;
   gap: 16px;
@@ -141,7 +141,7 @@ figcaption {
   margin-top: 4px;
 }
 
-/* ── Resources card ── */
+/* Resources card */
 .resources-body {
   display: flex;
   align-items: center;
@@ -162,7 +162,7 @@ figcaption {
   color: #1a6e8a;
 }
 
-/* ── Footer ── */
+/* Footer */
 footer {
   background-color: #1a6e8a;
   color: white;
