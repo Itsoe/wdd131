@@ -1,11 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itai Matope | WDD 131</title>
+  <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Itai Matope, home page assignment">
+  <meta name="author" content="Itai Matope">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Itai Matope</h1>
+  <header>
+    <p class="site-title">WDD 131: Dynamic Web Fundamentals</p>
+  </header>
+
+  <nav>
+    <a href="https://www.linkedin.com/in/itai-matope/" target="_blank">LinkedIn</a>
+    <a href="https://byui-cse.github.io/wdd131-ww-course/week01/" target="_blank">I-Learn</a>
+    <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/james/1?lang=eng" target="_blank">Scripture</a>
+    <a href="#">Final Project</a>
+  </nav>
+
+  <main>
+    <h1>Itai Matope</h1>
+    <div class="cards-container">
+
+      <section class="card about-card">
+        <h2 class="card-header">About Me</h2>
+        <div class="card-body">
+          <div class="bio-section">
+            <p>My name is Itai Matope. I am from Zimbabwe, with a passion for Global Management, Digital Transformation, and web development. I bring a decade of experience in fintech and remittances, with strong skills in Business Analytics, Digital Transformation, customer service, sales support, and practical problem-solving.</p>
+            <img src="images/profile.webp" alt="Itai Matope" class="profile-img" width="150" height="200">
+          </div>
+          <h3 class="location-heading" aria-level="3">Harare, Zimbabwe</h3>
+          <hr>
+          <div class="flag-section">
+            <figure>
+              <img src="https://flagcdn.com/w160/zw.png" alt="Official Flag of Zimbabwe" class="flag-img" width="160" height="107">
+              <figcaption>Official Flag of Zimbabwe</figcaption>
+            </figure>
+            <p>Zimbabwe is located in Southern Africa and is known for its beautiful landscapes, rich culture, wildlife, music, and vibrant history. Harare is the capital city and one of the most important cultural centers in Africa.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card resources-card">
+        <h2 class="card-header">Web Dev Resources</h2>
+        <div class="card-body resources-body">
+          <ul>
+            <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+            <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+            <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></li>
+            <li><a href="https://docs.github.com" target="_blank">GitHub Docs</a></li>
+            <li><a href="https://css-tricks.com" target="_blank">CSS-Tricks</a></li>
+            <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Itai Matope, Zimbabwe</p>
+    <p id="lastModified"></p>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* ── Header ── */
+header {
+  background-color: #1a6e8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header .site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* ── Nav ── */
+nav {
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ── Main ── */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+main > h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* ── Cards layout ── */
+.cards-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.about-card {
+  flex: 2;
+}
+
+.resources-card {
+  flex: 1;
+}
+
+.card-header {
+  background-color: #1a6e8a;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* ── About Me card ── */
+.bio-section {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.bio-section p {
+  flex: 1;
+  line-height: 1.6;
+}
+
+.profile-img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.location-heading {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 16px;
+}
+
+.flag-section {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.flag-section p {
+  line-height: 1.6;
+}
+
+figure {
+  flex-shrink: 0;
+}
+
+.flag-img {
+  width: 160px;
+  display: block;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* ── Resources card ── */
+.resources-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+}
+
+.resources-body ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.resources-body ul li {
+  margin: 10px 0;
+}
+
+.resources-body ul li a {
+  color: #1a6e8a;
+}
+
+/* ── Footer ── */
+footer {
+  background-color: #1a6e8a;
+  color: white;
+  text-align: center;
+  padding: 16px;
+}
+
+footer p {
+  margin: 4px 0;
+}
+
+footer #lastModified {
+  color: yellow;
+}
