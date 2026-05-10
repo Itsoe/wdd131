@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   background-color: #f0f0f0;
 }
 
@@ -17,14 +17,17 @@ header {
   padding: 20px;
 }
 
-header .site-title {
+header #course-title {
   font-size: 1.8rem;
   font-weight: bold;
+  display: block;
+  padding-bottom: 8px;
 }
 
 /* ── Nav ── */
 nav {
   background-color: #333;
+  color: white;
   display: flex;
   justify-content: space-around;
   padding: 12px 20px;
@@ -57,21 +60,14 @@ main > h1 {
 
 /* ── Cards layout ── */
 .cards-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
   gap: 20px;
 }
 
 .card {
   border: 1px solid #ddd;
   overflow: hidden;
-}
-
-.about-card {
-  flex: 2;
-}
-
-.resources-card {
-  flex: 1;
 }
 
 .card-header {
