@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victoria Falls, Zimbabwe | Itai Matope</title>
+  <meta name="description" content="Discover Victoria Falls — Mosi-oa-Tunya, the Smoke That Thunders. One of the Seven Natural Wonders of the World, on the border of Zimbabwe and Zambia.">
+  <meta name="author" content="Itai Matope">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1 class="site-title">Victoria Falls</h1>
+  </header>
+
+  <main>
+
+    <div class="hero">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/place/harare-large.webp">
+        <img
+          src="images/place/harare-small.webp"
+          alt="Victoria Falls — a massive curtain of white water thundering into the Zambezi Gorge, surrounded by lush rainforest mist"
+          width="1200"
+          height="800"
+        >
+      </picture>
+    </div>
+
+    <section class="data">
+      <h2>Data</h2>
+      <p><span class="item">Width:</span><span class="value">1,708 m</span></p>
+      <p><span class="item">Height:</span><span class="value">108 m</span></p>
+      <p><span class="item">River:</span><span class="value">Zambezi</span></p>
+      <p><span class="item">Countries:</span><span class="value">Zimbabwe / Zambia</span></p>
+      <p><span class="item">Local Name:</span><span class="value">Mosi-oa-Tunya</span></p>
+      <p><span class="item">UNESCO:</span><span class="value">Since 1989</span></p>
+      <p><span class="item">Best Time:</span><span class="value">April – June</span></p>
+    </section>
+
+    <section class="weather">
+      <h2 class="weather-heading">Weather</h2>
+      <div class="weather-icon-mobile">
+        <img src="images/place/weather-icon.svg" alt="Partly cloudy weather icon" width="75" height="75">
+      </div>
+      <p><span class="item">Temperature:</span><span class="value">9 °C</span></p>
+      <p><span class="item">Conditions:</span><span class="value">Partly Cloudy</span></p>
+      <p><span class="item">Wind:</span><span class="value">12 km/h</span></p>
+      <p><span class="item">Wind Chill:</span><span class="value" id="wind-chill">…</span></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Itai Matope | Victoria Falls</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>

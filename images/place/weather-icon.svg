@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="80" height="80" role="img" aria-label="Partly cloudy">
+  <!-- Sun body -->
+  <circle cx="38" cy="40" r="16" fill="#FFD700"/>
+  <!-- Sun rays -->
+  <line x1="38" y1="18" x2="38" y2="10" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="38" y1="72" x2="38" y2="64" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="16" y1="40" x2="8"  y2="40" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="68" y1="40" x2="76" y2="40" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="22" y1="24" x2="16" y2="18" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="56" y1="24" x2="62" y2="18" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="22" y1="56" x2="16" y2="62" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <line x1="56" y1="56" x2="62" y2="62" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+  <!-- Cloud (overlaps sun to show "partly" cloudy) -->
+  <ellipse cx="60" cy="68" rx="26" ry="14" fill="#c8d6e5"/>
+  <ellipse cx="46" cy="62" rx="16" ry="13" fill="#dce8f0"/>
+  <ellipse cx="66" cy="60" rx="18" ry="14" fill="#dce8f0"/>
+  <ellipse cx="60" cy="68" rx="26" ry="14" fill="#dce8f0"/>
+</svg>
