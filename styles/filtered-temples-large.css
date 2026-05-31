@@ -1,6 +1,6 @@
-/* Large Viewport Overrides (min-width: 768px) */
+/* Large Viewport Overrides */
 @media screen and (min-width: 768px) {
-  /* Hiding the hamburger and showing thenav inline */
+  /* Hiding the hamburger and showing the nav inline */
   #hamburger {
     display: none;
   }
@@ -29,7 +29,7 @@
     outline-offset: 0;
   }
 
-  /* Responsive multi-column grid */
+  /* Responsive multi column grid */
   .gallery {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
@@ -39,7 +39,7 @@
   }
 }
 
-/* Extra Large Viewport measurements min-width: 1024px */
+/* Extra Large Viewport measurements */
 @media screen and (min-width: 1024px) {
   main h1 {
     font-size: 1.9rem;
