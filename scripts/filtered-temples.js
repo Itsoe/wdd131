@@ -155,14 +155,14 @@ navLinks.forEach(link => {
   });
 });
 
-// Initial display — all temples
+// All temples
 displayTemples(temples);
 
 // Footer
 document.querySelector('#currentyear').textContent = new Date().getFullYear();
 document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`;
 
-// Hamburger menu toggle
+// Hamburger menu icon
 const hamburger = document.querySelector('#hamburger');
 const nav = document.querySelector('#main-nav');
 

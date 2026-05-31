@@ -50,7 +50,7 @@ header {
   letter-spacing: 0.04em;
 }
 
-/* Hamburger Button */
+/* Hamburger Button sectio */
 #hamburger {
   background: none;
   border: 2px solid var(--text-light);
@@ -132,7 +132,7 @@ main h1 {
   line-height: 1.4;
 }
 
-/* Gallery Grid (mobile: 1 column) */
+/* Gallery Grid for the mobile view1 column */
 .gallery {
   display: grid;
   grid-template-columns: 1fr;
