@@ -1,0 +1,51 @@
+/* Large Viewport Overrides (min-width: 768px) */
+@media screen and (min-width: 768px) {
+  /* Hide hamburger; show nav inline */
+  #hamburger {
+    display: none;
+  }
+
+  #main-nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background-color: transparent;
+    border-top: none;
+    gap: 0.25rem;
+  }
+
+  #main-nav a {
+    padding: 0.45rem 0.9rem;
+    border-bottom: none;
+    border-radius: var(--radius);
+    font-size: 0.95rem;
+  }
+
+  #main-nav a:hover,
+  #main-nav a:focus,
+  #main-nav a.active {
+    background-color: var(--accent);
+    color: #000000;
+    outline-offset: 0;
+  }
+
+  /* Responsive multi-column grid */
+  .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  main h1 {
+    font-size: 1.65rem;
+  }
+}
+
+/* Extra Large Viewport (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+  main h1 {
+    font-size: 1.9rem;
+  }
+
+  figure img {
+    height: 270px;
+  }
+}
