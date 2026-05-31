@@ -74,7 +74,7 @@ header {
   outline-offset: 2px;
 }
 
-/* Navigation (mobile — hidden by default) */
+/* Navigation (mobile hidden by default) */
 #main-nav {
   display: none;
   flex-direction: column;
@@ -139,7 +139,7 @@ main h1 {
   gap: 1.5rem;
 }
 
-/* No-results message */
+/* No results message */
 .no-results {
   grid-column: 1 / -1;
   text-align: center;
