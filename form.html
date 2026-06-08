@@ -19,13 +19,13 @@
 
   <main>
     <form method="get" action="review.html" class="review-form">
-      <label for="product-name">Product Name</label>
+      <label for="product-name">Product Name <span class="required">(Required)</span></label>
       <select id="product-name" name="productName" required>
         <option value="" disabled selected>Select a Product ...</option>
       </select>
 
       <fieldset class="rating-group">
-        <legend>Overall Rating</legend>
+        <legend>Overall Rating <span class="required">(Required)</span></legend>
         <div class="rating-options">
           <div class="rating-choice">
             <label for="rating-1">&star;</label>
@@ -50,7 +50,7 @@
         </div>
       </fieldset>
 
-      <label for="install-date">Date of Installation</label>
+      <label for="install-date">Date of Installation <span class="required">(Required)</span></label>
       <input type="date" id="install-date" name="installDate" required>
 
       <fieldset class="features-group">

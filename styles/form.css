@@ -64,6 +64,7 @@ legend {
   font-weight: 700;
 }
 
+.required,
 label span,
 .features-group p {
   color: var(--muted);
