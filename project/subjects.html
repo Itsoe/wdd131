@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore Edutari subjects, exam preparation, and offline progress tools for digitally excluded students.">
+  <meta name="author" content="Itai Matope">
+  <title>Subjects | Edutari</title>
+  <link rel="stylesheet" href="styles/edutari.css">
+  <script src="scripts/edutari.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Edutari home">
+      <img src="images/edutari-logo.webp" alt="Edutari logo" width="200" height="200">
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span aria-hidden="true">&#9776;</span></button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="subjects.html" aria-current="page">Subjects</a>
+      <a href="support.html">Support</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div>
+        <h1>Organized lessons for school success.</h1>
+        <p>
+          Edutari groups lessons by subject so students can move from everyday
+          practice to exam preparation with confidence, even when learning offline.
+        </p>
+      </div>
+      <img src="images/students-computer-classroom.webp" alt="Students using a computer in a classroom" width="1200" height="800" loading="lazy">
+    </section>
+
+    <section class="tool-panel stage-panel" aria-labelledby="subject-tool-heading">
+      <div class="section-heading">
+        <h2 id="subject-tool-heading">What is on Offer?</h2>
+      </div>
+      <div id="subject-list" class="stage-grid"></div>
+    </section>
+
+    <section class="split-section reverse" aria-labelledby="exam-heading">
+      <div>
+        <h2 id="exam-heading">Practice that prepares students for the pressure of exams.</h2>
+        <p>
+          The exam preparation area can include timed quizzes, past-paper style
+          questions, topic summaries, and review lists. Students can learn where
+          they are improving and where they need to return for practice.
+        </p>
+      </div>
+      <img src="images/african-students-school.webp" alt="African students gathered at school" width="1200" height="800" loading="lazy">
+    </section>
+
+    <section class="progress-widget" aria-labelledby="progress-heading">
+      <div>
+        <h2 id="progress-heading">Save a weekly study target</h2>
+        <p>
+          Choose a goal and the browser will remember it on this device. This
+          demonstrates how Edutari can keep simple learner preferences locally.
+        </p>
+      </div>
+      <form id="goal-form" class="goal-form">
+        <label for="goal-subject">Subject</label>
+        <select id="goal-subject" name="goal-subject" required>
+          <option value="">Choose a subject</option>
+          <option value="Mathematics">Mathematics</option>
+          <option value="English">English</option>
+          <option value="Science">Science</option>
+          <option value="Social Studies">Social Studies</option>
+        </select>
+
+        <label for="goal-hours">Weekly study hours</label>
+        <input id="goal-hours" name="goal-hours" type="number" min="1" max="30" required>
+
+        <button class="button" type="submit">Save Goal</button>
+      </form>
+      <p id="saved-goal" class="saved-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Edutari</p>
+    <div class="footer-links">
+      <a href="references.html">References</a>
+      <a href="https://za.linkedin.com/company/edutari" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/Edutari" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </footer>
+</body>
+</html>

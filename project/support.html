@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn how parents, schools, and communities can support students using Edutari offline learning tablets.">
+  <meta name="author" content="Itai Matope">
+  <title>Support | Edutari</title>
+  <link rel="stylesheet" href="styles/edutari.css">
+  <script src="scripts/edutari.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Edutari home">
+      <img src="images/edutari-logo.webp" alt="Edutari logo" width="200" height="200">
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span aria-hidden="true">&#9776;</span></button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="subjects.html">Subjects</a>
+      <a href="support.html" aria-current="page">Support</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div>
+        <h1>Support makes offline learning stronger.</h1>
+        <p>
+          Edutari works best when students are surrounded by adults and community
+          partners who can encourage study routines, protect devices, and help
+          connect tablets to updates when internet is available.
+        </p>
+      </div>
+      <img src="images/african-students-school.webp" alt="African students gathered at school" width="1200" height="800" loading="lazy">
+    </section>
+
+    <section class="feature-band" aria-labelledby="roles-heading">
+      <div class="section-heading">
+        <h2 id="roles-heading">Everyone has a part to play</h2>
+      </div>
+      <div class="card-grid three">
+        <article class="info-card">
+          <h3>Parents and guardians</h3>
+          <p>Set study time, check weekly progress, charge devices safely, and celebrate completed lessons.</p>
+        </article>
+        <article class="info-card">
+          <h3>Schools</h3>
+          <p>Choose subject packs, align lessons with classroom topics, and guide students toward exam readiness.</p>
+        </article>
+        <article class="info-card">
+          <h3>Community partners</h3>
+          <p>Create shared learning spaces, sponsor tablets, and help update content when connectivity is available.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <div>
+        <h2 id="contact-heading">Ask about bringing Edutari to your community.</h2>
+        <p>
+          Use the form to share whether you are a parent, teacher, school leader,
+          or community partner. Your response is saved locally on this device as
+          a demonstration of browser storage.
+        </p>
+      </div>
+
+      <form id="contact-form" class="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+
+        <label for="role">I am a</label>
+        <select id="role" name="role" required>
+          <option value="">Choose one</option>
+          <option value="Parent or guardian">Parent or guardian</option>
+          <option value="Teacher">Teacher</option>
+          <option value="School leader">School leader</option>
+          <option value="Community partner">Community partner</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="button" type="submit">Send Message</button>
+      </form>
+      <p id="contact-response" class="saved-message" aria-live="polite"></p>
+    </section>
+
+    <section class="faq-section" aria-labelledby="faq-heading">
+      <div class="section-heading">
+        <h2 id="faq-heading">Common questions</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Can students use Edutari without internet at home?</summary>
+          <p>Yes. The main learning resources are preloaded onto the tablet so students can study offline.</p>
+        </details>
+        <details>
+          <summary>How do new lessons reach the tablet?</summary>
+          <p>Schools or community centers can update content when the tablet is connected to reliable internet.</p>
+        </details>
+        <details>
+          <summary>How can parents help if they are not subject experts?</summary>
+          <p>Parents can support routines, check completed activities, and encourage students to return to difficult topics.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Edutari</p>
+    <div class="footer-links">
+      <a href="references.html">References</a>
+      <a href="https://za.linkedin.com/company/edutari" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/Edutari" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </footer>
+</body>
+</html>

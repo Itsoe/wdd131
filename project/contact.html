@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Edutari to ask questions, share suggestions, or learn more about offline tablet-based education support.">
+  <meta name="author" content="Itai Matope">
+  <title>Contact | Edutari</title>
+  <link rel="stylesheet" href="styles/edutari.css">
+  <script src="scripts/edutari.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html" aria-label="Edutari home">
+      <img src="images/edutari-logo.webp" alt="Edutari logo" width="200" height="200">
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span aria-hidden="true">&#9776;</span></button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="subjects.html">Subjects</a>
+      <a href="support.html">Support</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-page" aria-labelledby="contact-heading">
+      <div class="contact-details">
+        <h1 id="contact-heading">Contact Us</h1>
+        <p>
+          Do you have questions or suggestions? Write to us directly or use the
+          form. We respond to learning partners, schools, parents, and community
+          supporters as soon as possible.
+        </p>
+        <p class="contact-email">
+          <span>Email</span>
+          <a href="mailto:info@edutari.com">info@edutari.com</a>
+        </p>
+      </div>
+
+      <form id="contact-form" class="contact-form contact-card">
+        <label for="name">Your Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+
+        <label for="email">Your Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+
+        <label for="role">I am a</label>
+        <select id="role" name="role" required>
+          <option value="">Choose one</option>
+          <option value="Parent or guardian">Parent or guardian</option>
+          <option value="Teacher">Teacher</option>
+          <option value="School leader">School leader</option>
+          <option value="Community partner">Community partner</option>
+        </select>
+
+        <label for="message">Write your message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button class="button" type="submit">Contact Us</button>
+      </form>
+      <p id="contact-response" class="saved-message contact-message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Edutari</p>
+    <div class="footer-links">
+      <a href="references.html">References</a>
+      <a href="https://za.linkedin.com/company/edutari" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.facebook.com/Edutari" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </footer>
+</body>
+</html>
