@@ -126,55 +126,16 @@ function renderFeaturedSubjects() {
   list.innerHTML = featuredCards;
 }
 
-function renderSubjects(level = "all") {
+function renderSubjects() {
   const list = document.querySelector("#subject-list");
 
   if (!list) {
     return;
   }
 
-  if (list.classList.contains("stage-grid")) {
-    list.innerHTML = learningStages
-      .map((stage) => learningStageTemplate(stage))
-      .join("");
-    return;
-  }
-
-  const filteredSubjects = level === "all"
-    ? subjects
-    : subjects.filter((subject) => subject.level === level);
-
-  if (filteredSubjects.length === 0) {
-    list.innerHTML = `<p>No subjects match this filter yet.</p>`;
-    return;
-  }
-
-  list.innerHTML = filteredSubjects
-    .map((subject) => subjectCardTemplate(subject))
+  list.innerHTML = learningStages
+    .map((stage) => learningStageTemplate(stage))
     .join("");
-}
-
-function setupSubjectFilters() {
-  const filterContainer = document.querySelector("#level-filters");
-
-  if (!filterContainer) {
-    return;
-  }
-
-  filterContainer.addEventListener("click", (event) => {
-    const selectedButton = event.target.closest("button");
-
-    if (!selectedButton) {
-      return;
-    }
-
-    document.querySelectorAll("#level-filters .chip").forEach((button) => {
-      button.classList.remove("active");
-    });
-
-    selectedButton.classList.add("active");
-    renderSubjects(selectedButton.dataset.level);
-  });
 }
 
 function setupGoalForm() {
@@ -246,6 +207,5 @@ setCurrentYear();
 setupNavigation();
 renderFeaturedSubjects();
 renderSubjects();
-setupSubjectFilters();
 setupGoalForm();
 setupContactForm();

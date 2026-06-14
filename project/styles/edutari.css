@@ -595,32 +595,6 @@ p {
   border-left: 0;
 }
 
-.filter-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.65rem;
-  margin-bottom: 1rem;
-}
-
-.chip {
-  min-height: 2.5rem;
-  padding: 0.55rem 0.8rem;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background-color: var(--white);
-  color: var(--navy);
-  font-weight: 800;
-  cursor: pointer;
-}
-
-.chip:hover,
-.chip:focus-visible,
-.chip.active {
-  border-color: var(--gold);
-  background-color: var(--gold);
-  color: var(--ink);
-}
-
 .progress-widget,
 .contact-section {
   display: grid;
